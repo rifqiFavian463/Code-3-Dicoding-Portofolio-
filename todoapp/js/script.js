@@ -125,11 +125,10 @@ document.addEventListener(RENDER_EVENT, function () {
   }
 
   function findTodoIndex(todoId){
-    for (const Index in todos){
+    for (const index in todos){
       if (todos[index].id === todoId){
         return index;
       }
-
     }
 
     return -1;
